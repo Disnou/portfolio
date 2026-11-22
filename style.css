@@ -1,0 +1,672 @@
+/* Estilos Globais e Reset */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3, .btn-lang, .badge-destaque {
+    font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+/* Seletor de Idiomas */
+.idiomas-container {
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-lang {
+    background: #1e1e1e;
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+    padding: 8px 14px;
+    min-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-lang:hover, .btn-lang.ativo {
+    background: #00ffcc;
+    color: #121212;
+}
+
+header, main {
+    width: 86%;
+    max-width: 1040px;
+}
+
+header {
+    margin-top: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    margin-top: 28px;
+}
+
+section {
+    width: 100%;
+}
+
+/* Efeito Máquina de Escrever (Typewriter) */
+h1 {
+    font-size: 3rem;
+    color: #00ffcc;
+    border-right: 4px solid #00ffcc;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    min-height: 1.2em;
+    display: inline-block;
+    letter-spacing: -0.02em;
+}
+
+/* Seção Sobre Mim */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    gap: 40px;
+}
+
+.about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text {
+    font-size: 1.08rem;
+    line-height: 1.65;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Seção de Ferramentas */
+.subtitulo-ferramentas {
+    font-size: 1.1rem;
+    color: #00ffcc;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.ferramentas-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ferramentas-tags span {
+    background: #2a2a2a;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #00ffcc;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ferramentas-tags span:hover {
+    background: #00ffcc;
+    color: #121212;
+}
+
+/* Logo (Gatinho) */
+.logo-container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00ffcc;
+    flex-shrink: 0;
+}
+
+/* Botões de Ação do Hero */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 32px auto 6px;
+}
+
+.btn-projetos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 14px 26px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #121212;
+    background-color: #00ffcc;
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s, border-color 0.3s;
+}
+
+.btn-projetos:hover {
+    background-color: #00b38f;
+    border-color: #00b38f;
+    transform: scale(1.03);
+}
+
+.btn-secundario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 14px 24px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #00ffcc;
+    background-color: #1e1e1e;
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn-secundario:hover {
+    background-color: #00ffcc;
+    color: #121212;
+    transform: translateY(-2px);
+}
+
+.icone-svg {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+}
+
+/* Cabeçalhos das Seções */
+.secao-cabecalho {
+    margin-bottom: 24px;
+}
+
+.secao-cabecalho h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+    padding-left: 14px;
+    border-left: 4px solid #00ffcc;
+}
+
+.secao-cabecalho p {
+    color: #b0b0b0;
+    font-size: 1rem;
+    padding-left: 18px;
+}
+
+/* Grid de Projetos para Clientes */
+.projetos-clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* Grid de Projetos Autorais (Sempre visível e centralizado na 2ª linha) */
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projetos-grid .projeto-card {
+    flex: 0 1 calc((100% - 40px) / 3);
+    min-width: 280px;
+}
+
+.projeto-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00ffcc;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.2);
+}
+
+.projeto-destaque {
+    border-top: 1px solid rgba(0, 255, 204, 0.18);
+    border-right: 1px solid rgba(0, 255, 204, 0.18);
+    border-bottom: 1px solid rgba(0, 255, 204, 0.18);
+}
+
+.link-inline {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 255, 204, 0.45);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.link-inline:hover {
+    border-bottom-color: #00ffcc;
+}
+
+.projeto-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 10px;
+    margin-bottom: 10px;
+}
+
+.badge-destaque {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 11px;
+    border-radius: 999px;
+    margin-bottom: 0;
+    color: #00ffcc;
+    background: rgba(0, 255, 204, 0.12);
+    border: 1px solid rgba(0, 255, 204, 0.35);
+}
+
+.link-empresa {
+    font-size: 0.82rem;
+    color: #b8b8b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.link-empresa:hover {
+    color: #00ffcc;
+    text-decoration: underline;
+}
+
+.badge-privado {
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.projeto-card h3 {
+    margin-top: 0;
+    color: #00ffcc;
+    font-size: 1.25rem;
+}
+
+.projeto-card p {
+    color: #cccccc;
+    margin: 12px 0 15px;
+    line-height: 1.55;
+    font-size: 0.96rem;
+}
+
+/* Imagem dentro do Card de Projetos */
+.projeto-img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+}
+
+.projeto-img-destaque {
+    height: 215px;
+    object-position: center top;
+}
+
+.projeto-img-wadjet {
+    object-fit: contain;
+    object-position: center center;
+    background-color: #171717;
+    padding: 6px 0;
+}
+
+.projeto-img-clara {
+    filter: brightness(0.92) contrast(1.02);
+}
+
+/* Credenciais e Avisos dentro do Card */
+.credenciais-box {
+    background: #2a2a2a;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #cccccc;
+    border-left: 3px solid #00ffcc;
+    line-height: 1.5;
+}
+
+.credenciais-box strong {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.cred-linha {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 8px;
+    margin-top: 4px;
+}
+
+.cred-par {
+    white-space: nowrap;
+}
+
+.credenciais-box code {
+    background: #1a1a1a;
+    padding: 1px 6px;
+    border-radius: 4px;
+    color: #00ffcc;
+    font-family: ui-monospace, Consolas, monospace;
+}
+
+.aviso-privado {
+    color: #d8d8d8;
+    font-weight: 500;
+}
+
+.aviso-coldstart {
+    font-size: 0.82rem !important;
+    color: #9e9e9e !important;
+    margin: -6px 0 14px !important;
+    font-style: italic;
+}
+
+/* Tech Tags */
+.tech-tags {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tech-tags span {
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    color: #e0e0e0;
+}
+
+/* Botão de Testar / Visitar Projeto */
+.btn-testar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 16px;
+    text-align: center;
+    background-color: transparent;
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-testar:hover {
+    background-color: #00ffcc;
+    color: #121212;
+}
+
+.btn-destaque-cta {
+    background-color: rgba(0, 255, 204, 0.12);
+}
+
+.card-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 14px;
+    background-color: #262626;
+    color: #e0e0e0;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: border-color 0.25s, color 0.25s, background 0.25s;
+}
+
+.btn-video .icone-svg {
+    color: #00ffcc;
+}
+
+.btn-video:hover {
+    border-color: #00ffcc;
+    color: #00ffcc;
+    background-color: rgba(0, 255, 204, 0.08);
+}
+
+/* Seção Como Posso Ajudar */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.servico-card {
+    background: #1e1e1e;
+    padding: 22px;
+    border-radius: 10px;
+    border-left: 4px solid #00ffcc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.servico-card h3 {
+    color: #00ffcc;
+    font-size: 1.12rem;
+    margin-bottom: 10px;
+}
+
+.servico-card p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+/* Rodapé / Contato */
+.contato {
+    text-align: center;
+    padding: 44px 20px;
+    border-top: 1px solid #333;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.contato h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.contato-subtitulo {
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+.contato-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    max-width: 860px;
+    margin: 22px auto 0;
+}
+
+.contato-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #1e1e1e;
+    border: 1px solid #2e2e2e;
+    color: #00ffcc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.25s;
+}
+
+.contato-item:hover {
+    border-color: #00ffcc;
+    background: rgba(0, 255, 204, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 960px) {
+    .projetos-grid .projeto-card {
+        flex: 0 1 calc((100% - 20px) / 2);
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    header, main {
+        width: 90%;
+    }
+
+    .idiomas-container {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .btn-lang {
+        min-height: 44px;
+        min-width: 48px;
+        padding: 10px 16px;
+    }
+
+    header {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    .about-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 24px 20px;
+        gap: 24px;
+    }
+
+    .logo-container img {
+        width: 145px;
+        height: 145px;
+    }
+
+    .ferramentas-tags {
+        justify-content: center;
+    }
+
+    .projetos-clientes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto-img-destaque {
+        height: 190px;
+    }
+}
+
+@media (max-width: 640px) {
+    .projetos-grid .projeto-card {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-projetos,
+    .btn-secundario {
+        width: 100%;
+    }
+
+    .contato-links {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato-item {
+        width: 100%;
+    }
+}

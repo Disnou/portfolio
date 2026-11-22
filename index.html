@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Disnou Almeida</title>
+    <meta name="description" content="Portfólio de Disnou Almeida — Desenvolvedor Web Full Stack Freelancer especializado em sites profissionais, landing pages e sistemas web sob medida com React, Next.js e PostgreSQL.">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disnou.netlify.app/">
+    <meta property="og:title" content="Portfólio - Disnou Almeida | Desenvolvedor Full Stack Freelancer">
+    <meta property="og:description" content="Sites profissionais, landing pages e sistemas web sob medida com React, Next.js e PostgreSQL. Veja projetos reais em produção e peça seu orçamento.">
+    <meta property="og:image" content="https://disnou.netlify.app/disnouv_newpfp.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfólio - Disnou Almeida | Desenvolvedor Full Stack Freelancer">
+    <meta name="twitter:description" content="Sites profissionais, landing pages e sistemas web sob medida com React, Next.js e PostgreSQL.">
+    <meta name="twitter:image" content="https://disnou.netlify.app/disnouv_newpfp.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./disnouv_newpfp.png">
+    <link rel="apple-touch-icon" href="./disnouv_newpfp.png">
+
+    <!-- Google Fonts: Space Grotesk + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+    <div class="idiomas-container" role="group" aria-label="Seleção de idioma">
+        <button type="button" class="btn-lang ativo" aria-pressed="true" onclick="mudarIdioma('pt', this)">PT</button>
+        <button type="button" class="btn-lang" aria-pressed="false" onclick="mudarIdioma('en', this)">EN</button>
+        <button type="button" class="btn-lang" aria-pressed="false" onclick="mudarIdioma('es', this)">ES</button>
+    </div>
+
+    <header>
+        <h1 id="nome-digitado" aria-label="Disnou Almeida"></h1>
+    </header>
+
+    <main>
+        <section aria-label="Sobre mim e ferramentas">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-i18n="sobre">Oi, me chamo Disnou. Sou Desenvolvedor Web Full Stack Freelancer e crio sites profissionais, landing pages e sistemas web sob medida para empresas e empreendedores.</p>
+                        <p data-i18n="estudo">Atualmente curso Análise e Desenvolvimento de Sistemas, unindo foco em performance, design limpo e soluções reais em produção.</p>
+                        <p class="parceria-texto" data-i18n="parceria">Também atuo em parceria na <a class="link-inline" href="https://sunsetfield.com.br/" target="_blank" rel="noopener noreferrer">Sunset Field Solutions</a>, desenvolvendo sites e sistemas sob medida para empresas.</p>
+                    </div>
+
+                    <div class="ferramentas-container">
+                        <h2 class="subtitulo-ferramentas" data-i18n="ferramentas">Ferramentas que utilizo:</h2>
+                        <div class="ferramentas-tags">
+                            <span><i class="devicon-html5-plain colored" aria-hidden="true"></i> HTML</span>
+                            <span><i class="devicon-css3-plain colored" aria-hidden="true"></i> CSS</span>
+                            <span><i class="devicon-javascript-plain colored" aria-hidden="true"></i> JavaScript</span>
+                            <span><i class="devicon-react-original colored" aria-hidden="true"></i> React</span>
+                            <span><i class="devicon-nextjs-plain" aria-hidden="true"></i> Next.js</span>
+                            <span><i class="devicon-tailwindcss-original colored" aria-hidden="true"></i> Tailwind CSS</span>
+                            <span><i class="devicon-postgresql-plain colored" aria-hidden="true"></i> PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-container">
+                    <img src="./disnouv_newpfp.png" alt="Logo de Disnou Almeida" data-i18n-alt="alt-logo">
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a class="btn-projetos btn-cta-principal" id="cta-whatsapp-hero" href="https://wa.me/5585988583923?text=Ol%C3%A1%20Disnou!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer">
+                    <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.82 14.07c-.24.68-1.41 1.31-1.95 1.39-.51.08-1.15.11-1.85-.11-.43-.14-.99-.32-1.7-.63-2.99-1.29-4.94-4.3-5.09-4.5-.15-.2-1.21-1.61-1.21-3.08 0-1.46.77-2.18 1.04-2.48.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.59.84 2.04.91 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.47.13.65-.08.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.34.08.12.08.7-.16 1.38z"/>
+                    </svg>
+                    <span data-i18n="btn-orcamento">Solicitar Orçamento</span>
+                </a>
+                <a class="btn-secundario" href="#projetos-clientes" data-i18n="btn-ver-projetos">Ver Projetos</a>
+                <a class="btn-secundario btn-github" href="https://github.com/Disnou" target="_blank" rel="noopener noreferrer">
+                    <i class="devicon-github-original" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="projetos-clientes" class="secao-projetos">
+            <div class="secao-cabecalho">
+                <h2 data-i18n="clientes-titulo">Projetos para Clientes</h2>
+                <p data-i18n="clientes-subtitulo">Produtos reais desenvolvidos sob medida e em produção.</p>
+            </div>
+
+            <div class="projetos-clientes-grid">
+                <article class="projeto-card projeto-destaque">
+                    <img class="projeto-img projeto-img-destaque" src="./gradibus.png" alt="Site institucional da Gradibus Transportadora" data-i18n-alt="alt-gradibus" loading="lazy">
+                    <div class="projeto-meta">
+                        <span class="badge-destaque" data-i18n="badge-cliente">Cliente Real • Em Produção</span>
+                        <a class="link-empresa" href="https://sunsetfield.com.br/" target="_blank" rel="noopener noreferrer" data-i18n="via-sunset">via Sunset Field Solutions</a>
+                    </div>
+                    <h3 data-i18n="gradibus-titulo">Gradibus Transportadora</h3>
+                    <p data-i18n="gradibus-desc">Site institucional e funil de captação de leads para transportadora de mudanças, fretes e logística de eventos no Ceará. Conta com galeria filtrável de operações, prova social e formulário interativo de orçamento enviado direto para o WhatsApp.</p>
+                    <div class="tech-tags">
+                        <span>React</span><span>Next.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+                    </div>
+                    <a class="btn-testar btn-destaque-cta" href="https://gradibus.com.br/" target="_blank" rel="noopener noreferrer" data-i18n="btn-visitar-site">Visitar Site</a>
+                </article>
+
+                <article class="projeto-card projeto-destaque">
+                    <img class="projeto-img projeto-img-destaque projeto-img-wadjet" src="./wadjet.png" alt="Tela de acesso do Gerenciador Wadjet" data-i18n-alt="alt-wadjet" loading="lazy">
+                    <div class="projeto-meta">
+                        <span class="badge-destaque badge-privado" data-i18n="badge-privado">Sistema Privado • Em Produção</span>
+                        <a class="link-empresa" href="https://sunsetfield.com.br/" target="_blank" rel="noopener noreferrer" data-i18n="via-sunset">via Sunset Field Solutions</a>
+                    </div>
+                    <h3 data-i18n="wadjet-titulo">Gerenciador Wadjet</h3>
+                    <p data-i18n="wadjet-desc">Plataforma web B2B desenvolvida para a Wadjet Segurança LTDA. Centraliza a gestão operacional, escalas de segurança privada, equipes e apoio a eventos em um ambiente seguro e responsivo.</p>
+                    <div class="credenciais-box aviso-privado" data-i18n="wadjet-aviso">🔒 Acesso restrito à equipe da Wadjet Segurança.</div>
+                    <div class="tech-tags">
+                        <span>React</span><span>Next.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+                    </div>
+                    <a class="btn-testar" href="https://gerenciador.wadjet.seg.br/" target="_blank" rel="noopener noreferrer" data-i18n="btn-ver-acesso">Ver Tela de Acesso</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="projetos-autorais" class="secao-projetos">
+            <div class="secao-cabecalho">
+                <h2 data-i18n="demos-titulo">Projetos Autorais &amp; Demos</h2>
+                <p data-i18n="demos-subtitulo">Sistemas interativos disponíveis para teste aberto.</p>
+            </div>
+
+            <div class="projetos-grid" id="meus-projetos">
+
+                <article class="projeto-card">
+                    <img class="projeto-img" src="./disnou-pdv.png" alt="Print do DisnouPDV" data-i18n-alt="alt-pdv" loading="lazy">
+                    <h3 data-i18n="proj1-titulo">1. PDV e Estoque Web</h3>
+                    <p data-i18n="proj1-desc">Solução para pequenos comércios registrarem vendas e controlarem produtos. Foco em atalhos de teclado para agilidade, cálculo de troco e baixa automática no estoque.</p>
+
+                    <div class="credenciais-box" data-i18n="proj1-cred">
+                        <strong>Credenciais para teste:</strong>
+                        <div class="cred-linha"><span>👤 <b>Gerente:</b></span> <span class="cred-par">Usuário <code>disnou</code></span> <span class="cred-par">| Senha <code>123</code></span></div>
+                        <div class="cred-linha"><span>🛒 <b>Caixa:</b></span> <span class="cred-par">Usuário <code>caixa01</code></span> <span class="cred-par">| Senha <code>abc</code></span></div>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="card-acoes">
+                        <a class="btn-testar" href="https://disnou.github.io/pdv-e-estoque/login/login.html" target="_blank" rel="noopener noreferrer" data-i18n="btn-testar">Testar Projeto</a>
+                        <a class="btn-video" href="https://www.youtube.com/watch?v=PcJNnBFfkkY" target="_blank" rel="noopener noreferrer">
+                            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4l6.27 3.6-6.27 3.6z"/></svg>
+                            <span data-i18n="btn-ver-video">Ver Vídeo Demo</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projeto-card">
+                    <img class="projeto-img" src="./invest-dash.png" alt="Print do InvestDash" data-i18n-alt="alt-invest" loading="lazy">
+                    <h3 data-i18n="proj2-titulo">2. Dashboard Financeiro</h3>
+                    <p data-i18n="proj2-desc">Painel visual para investidores. Cadastro de aportes, cálculo de preço médio, simulação de juros compostos, gráficos interativos e opção de exportação de relatórios em .csv.</p>
+                    <div class="tech-tags">
+                        <span>React</span><span>Tailwind CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="card-acoes">
+                        <a class="btn-testar" href="https://disnou.github.io/invest-dash-premium/" target="_blank" rel="noopener noreferrer" data-i18n="btn-testar">Testar Projeto</a>
+                        <a class="btn-video" href="https://www.youtube.com/watch?v=Rnnq_OTF2lY" target="_blank" rel="noopener noreferrer">
+                            <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4l6.27 3.6-6.27 3.6z"/></svg>
+                            <span data-i18n="btn-ver-video">Ver Vídeo Demo</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projeto-card">
+                    <img class="projeto-img" src="./molaris.jpg" alt="Print do MolarisStock" data-i18n-alt="alt-molaris" loading="lazy">
+                    <h3 data-i18n="proj3-titulo">3. Inventário para Laboratórios</h3>
+                    <p data-i18n="proj3-desc">Software focado no mercado B2B para gestão de reagentes clínicos. Possui lógica de conversão de medidas químicas e sistema de alertas para validade e reposição de lotes.</p>
+                    <p class="aviso-coldstart" data-i18n="molaris-aviso">⏱️ Hospedado em servidor gratuito — pode levar alguns segundos para iniciar.</p>
+                    <div class="tech-tags">
+                        <span>React</span><span>PostgreSQL</span><span>Tailwind CSS</span>
+                    </div>
+                    <a class="btn-testar" href="https://molaris-stock.onrender.com/login.html" target="_blank" rel="noopener noreferrer" data-i18n="btn-testar">Testar Projeto</a>
+                </article>
+
+                <article class="projeto-card">
+                    <img class="projeto-img" src="./kanban.png" alt="Print da Plataforma V-Kanban" data-i18n-alt="alt-kanban" loading="lazy">
+                    <h3 data-i18n="proj4-titulo">4. Kanban Trilíngue</h3>
+                    <p data-i18n="proj4-desc">App de produtividade no estilo Trello. Quadros com sistema arrastar-e-soltar (drag-and-drop), salvamento local e alteração instantânea de idioma (PT, EN, ES).</p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a class="btn-testar" href="https://v-kanban.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="btn-testar">Testar Projeto</a>
+                </article>
+
+                <article class="projeto-card">
+                    <img class="projeto-img projeto-img-clara" src="./pondera.png" alt="Print do Pondera - Simulador de Notas" data-i18n-alt="alt-pondera" loading="lazy">
+                    <h3 data-i18n="proj5-titulo">5. Simulador de Estudos</h3>
+                    <p data-i18n="proj5-desc">Ferramenta avançada para estudantes. Algoritmo para cálculo de médias usando pesos específicos e gerador dinâmico de cronogramas semanais de estudo.</p>
+                    <div class="tech-tags">
+                        <span>JavaScript</span><span>React</span><span>Tailwind CSS</span>
+                    </div>
+                    <a class="btn-testar" href="https://v-pondera.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="btn-testar">Testar Projeto</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="servicos" class="secao-servicos">
+            <div class="secao-cabecalho">
+                <h2 data-i18n="servicos-titulo">Como posso ajudar</h2>
+                <p data-i18n="servicos-subtitulo">Soluções diretas para tirar seu projeto do papel com qualidade profissional.</p>
+            </div>
+
+            <div class="servicos-grid">
+                <article class="servico-card">
+                    <h3 data-i18n="serv1-titulo">Sites Institucionais &amp; Landing Pages</h3>
+                    <p data-i18n="serv1-desc">Páginas rápidas, responsivas e focadas em conversão no WhatsApp e SEO para posicionar sua empresa com credibilidade.</p>
+                </article>
+
+                <article class="servico-card">
+                    <h3 data-i18n="serv2-titulo">Sistemas Web &amp; Dashboards</h3>
+                    <p data-i18n="serv2-desc">Plataformas sob medida com login, controle de estoque, escalas, relatórios e banco de dados para automatizar sua operação.</p>
+                </article>
+
+                <article class="servico-card">
+                    <h3 data-i18n="serv3-titulo">Manutenção &amp; Otimização</h3>
+                    <p data-i18n="serv3-desc">Melhorias visuais, correção de bugs, ajustes de responsividade no celular e evolução contínua de aplicações em React e Next.js.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contato" id="contato">
+        <h2 data-i18n="vamos-trabalhar">Vamos trabalhar juntos?</h2>
+        <p class="contato-subtitulo" data-i18n="contato-texto">Entre em contato ou acompanhe meu trabalho nas redes:</p>
+
+        <div class="contato-links">
+            <a class="contato-item" id="cta-whatsapp-footer" href="https://wa.me/5585988583923?text=Ol%C3%A1%20Disnou!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer">
+                <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.82 14.07c-.24.68-1.41 1.31-1.95 1.39-.51.08-1.15.11-1.85-.11-.43-.14-.99-.32-1.7-.63-2.99-1.29-4.94-4.3-5.09-4.5-.15-.2-1.21-1.61-1.21-3.08 0-1.46.77-2.18 1.04-2.48.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.59.84 2.04.91 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.36 1.45.3.15.47.13.65-.08.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.34.08.12.08.7-.16 1.38z"/>
+                </svg>
+                <span>(85) 98858-3923</span>
+            </a>
+
+            <a class="contato-item" href="mailto:disnouaraujo@gmail.com">
+                <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                <span>disnouaraujo@gmail.com</span>
+            </a>
+
+            <a class="contato-item" href="https://github.com/Disnou" target="_blank" rel="noopener noreferrer">
+                <i class="devicon-github-original" aria-hidden="true"></i>
+                <span>github.com/Disnou</span>
+            </a>
+
+            <a class="contato-item" href="https://www.instagram.com/disnoudev/" target="_blank" rel="noopener noreferrer">
+                <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span>@disnoudev</span>
+            </a>
+
+            <a class="contato-item" href="https://www.youtube.com/@disnou_kkj" target="_blank" rel="noopener noreferrer">
+                <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                    <path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4l6.27 3.6-6.27 3.6z"/>
+                </svg>
+                <span>YouTube</span>
+            </a>
+
+            <a class="contato-item" href="https://sunsetfield.com.br/" target="_blank" rel="noopener noreferrer">
+                <svg class="icone-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <span>Sunset Field Solutions</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

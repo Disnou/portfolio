@@ -1,0 +1,13 @@
+# Netlify local state
+.netlify/
+
+# Arquivos locais extras que não fazem parte do portfólio
+fiver.mp4
+fiver 2.mp4
+eu.jpeg
+aecio_de_borba.jpg
+Presidente_Vargas_Stadium.jpg
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
